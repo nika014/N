@@ -1,0 +1,34 @@
+
+algoritmo "para"
+
+var
+
+   tentativas: inteiro
+   usuario, senha: caractere
+
+inicio
+
+   para tentativas de 1 ate 3 faça
+      escreval("----------------LOGIN------------------")
+      escreval("Tentativa ", tentativas, " de 3")
+
+      escreval(" ")
+      escreval("Informe seu usuário:")
+      leia(usuario)
+      escreval("--------------------")
+      escreval("Informe sua senha:")
+      leia(senha)
+
+      se(usuario="nika") e (senha="4002") entao
+         limpatela()
+         escreval("Bem-vindo ao sistema!")
+         interrompa
+
+      senao
+         limpatela()
+         escreval("Acesso negado :/")
+
+      fimse
+   fimpara
+
+fimalgoritmo
