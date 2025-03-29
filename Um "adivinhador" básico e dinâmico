@@ -1,0 +1,56 @@
+
+algoritmo "TREINO"
+
+var
+
+   idade: real
+   nome, lingua, nacionalidade, resposta: caractere
+
+inicio
+
+   repita
+
+      escreval("                     UM POUCO SOBRE VOCÊ...")
+      escreval("__________________________________________________________________ ")
+      escreval(" ")
+      escreval(" ")
+      escreval("Qual a metade da sua idade?")
+      leia(idade)
+      escreval(" ")
+      escreval("Qual o seu nome?")
+      leia(nome)
+      escreval(" ")
+      escreval("Qual sua língua nativa?")
+      leia(lingua)
+
+      idade <- idade * 2
+
+      se (lingua = "portugues") ou (lingua = "português") ou (lingua = "pt") entao
+         escreval("------------------------ ")
+         escreval(" ")
+         escreval("Pelos dados fornecidos...")
+         escreval(" ")
+         escreval("Sua idade é ", idade, ", seu nome é ", nome, ", e sua nacionalidade é brasileira.")
+
+      senao
+         escreval("------------------------ ")
+         escreval(" ")
+         escreval("Pelos dados fornecidos...")
+         escreval(" ")
+         escreval("Sua idade é ", idade, ", seu nome é ", nome, ", e sua nacionalidade é gringa/exterior.")
+
+      fimse
+
+      escreval("Deseja continuar? S/N")
+      leia(resposta)
+
+      se (resposta = "s") ou (resposta = "S") ou (resposta = "sim") ou (resposta = "SIM") ou (resposta = "Sim") entao
+         limpatela
+
+      fimse
+
+   ate (resposta = "n") ou (resposta = "N") ou (resposta = "nao") ou (resposta = "NAO") ou (resposta = "Nao") ou (resposta = "não") ou (resposta = "NÃO") ou (resposta = "Não")
+
+
+fimalgoritmo
+
